@@ -5,10 +5,16 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "reviews")
 @AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Review {
 
     @Id
